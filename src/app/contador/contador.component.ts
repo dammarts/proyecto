@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { persona } from './persona';
+
 
 @Component({
   selector: 'app-contador',
@@ -9,9 +9,14 @@ import { persona } from './persona';
 })
 export class ContadorComponent {
 
-  persona:persona = {
-    nombre: `daniel montoya`,
-    edad: 22,
+  numero:number = 1
+
+  decrementar() {
+    this.numero--; 
+  }
+  
+  incrementar() {
+    this.numero++;
   }
 
 }
