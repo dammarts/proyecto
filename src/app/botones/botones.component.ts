@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class BotonesComponent {
 
-  text_color:string ='';
+   src = {
+   imagen1: 'https://images.pexels.com/photos/16960416/pexels-photo-16960416/free-photo-of-mar-paisaje-cielo-playa.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load',
+   imagen2: 'https://images.pexels.com/photos/16638256/pexels-photo-16638256/free-photo-of-soleado-playa-verano-sol.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load'
+  }
 
-  button_disabled:boolean= false;
+  img:string = "https://images.pexels.com/photos/16977664/pexels-photo-16977664/free-photo-of-el-cielo-tambien-es-lila.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
 
 }
