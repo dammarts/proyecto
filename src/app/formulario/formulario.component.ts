@@ -9,7 +9,8 @@ export class FormularioComponent {
 
   mostrar_en_consola(name:string){
     console.log(name)
+    this.abrirAlert = true
   }
-
+  abrirAlert:boolean = false;
 
 }
