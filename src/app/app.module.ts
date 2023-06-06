@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ContadorComponent } from './contador/contador.component';
-import { PruebaComponent } from './prueba/prueba.component';
-import { QaComponent } from './qa/qa.component';
+import { HeaderComponent } from './header/header.component';
+import { AllComponent } from './all/all.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent,
-    PruebaComponent,
-    QaComponent
+    HeaderComponent,
+    AllComponent,
+    
   ],
   imports: [
     BrowserModule

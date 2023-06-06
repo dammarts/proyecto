@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QaComponent } from './qa.component';
+import { HeaderComponent } from './header.component';
 
-describe('QaComponent', () => {
-  let component: QaComponent;
-  let fixture: ComponentFixture<QaComponent>;
+describe('HeaderComponent', () => {
+  let component: HeaderComponent;
+  let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [QaComponent]
+      declarations: [HeaderComponent]
     });
-    fixture = TestBed.createComponent(QaComponent);
+    fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
