@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+#header{
+ width: 100%;
+}
+
+img {
+    width: 100%;
+}
+nav {
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    
+}
+.menu {
+    display:flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li{
+  margin-right: 10px;
+  font-size: 15px;
+  flex-grow: 1;
+  
+}
+.menu > li:hover{
+    background-color: greenyellow;
+    
+}
+.menu > li > a{
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+
