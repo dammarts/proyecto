@@ -15,15 +15,17 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: linear-gradient(90deg, #87E493 36%, #B7E2A2 60%);
+    
+}
+  
+.example-accordion-title h2{
     padding: 5px 5px 5px 15px;
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
-    border: solid 1px #ccc;
     justify-content: space-between;
     align-content: center;
 }
-  
 
   
   
