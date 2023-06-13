@@ -90,7 +90,7 @@
   .example-accordion-item:last-child {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px ;
-    
+    border-bottom: #ccc solid 1px;
     
   }
   
