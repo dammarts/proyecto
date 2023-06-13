@@ -1,0 +1,156 @@
+.example-accordion {
+    display: block;
+    
+  }
+
+  #content {
+
+    padding: 40px 93.5px 80px;
+    font-family: Arial,Verdana,sans-serif;
+    
+  }
+
+  .example-accordion-title{
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(90deg, #87E493 36%, #B7E2A2 60%);
+    
+}
+  
+.example-accordion-title h2{
+    padding: 5px 5px 5px 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    justify-content: space-between;
+    align-content: center;
+    line-height: 1.4;
+}
+
+  
+  
+  .example-accordion-item {
+    display: block;
+    
+  }
+  
+  .example-accordion-item + .example-accordion-item { 
+    display: block;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 0px 1px 
+    
+  }
+  
+  .example-accordion-item-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    
+  }
+
+  
+  
+  .example-accordion-item-description {
+    font-size: 0.85em;
+    color: #999;
+    
+  }
+
+  
+  
+  .example-accordion-item-header,
+  .example-accordion-item-body {
+    padding: 16px;
+    
+  
+  }
+
+  
+
+  .example-accordion-item-header:hover {
+    cursor: pointer;
+    background-color: #F3F8E7;
+    font-weight: bold;
+    transition: 0.5s;
+    
+  }
+
+ 
+  
+  .example-accordion-item:first-child {
+    border-bottom: none;
+    border-left: #ccc solid 1px;
+    border-right: #ccc solid 1px;
+  }
+  
+  .example-accordion-item:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    border-bottom: #ccc solid 1px;
+    
+  }
+  
+  .textoaccordion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .textoaccordion li a {
+    color: #00AA6D;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .textoaccordion li a:hover {
+    text-decoration: underline;
+  }
+
+  .textoaccordion li p {
+    font-size: 0.85rem;
+    
+  }
+
+  .listadentrotextoacordion {
+    list-style: none;
+    
+  
+  }
+
+  .listadentrotextoacordion li {
+    display: flex;
+    
+  }
+
+  .listadentrotextoacordion p {
+    padding: 3px;
+    margin: 0px;
+  }
+
+  .especial {
+    margin: 0px;
+  }
+
+  @media (max-width:1460px) {
+    #content {
+        display: block;
+        width: 100%;
+        
+    }
+
+    
+    
+    
+    @media (max-width:826.4px){
+        #content{
+            
+            width: 809px;
+            
+        }
+
+        
+    }
+    
+}

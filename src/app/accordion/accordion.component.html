@@ -1,0 +1,142 @@
+<div id="content">
+  <div class="example-accordion-title">
+    <h2>Normativa y novedades</h2>
+  </div>
+
+  <cdk-accordion class="example-accordion">
+    <cdk-accordion-item
+      *ngFor="let item of items; let index = index"
+      #accordionItem="cdkAccordionItem"
+      class="example-accordion-item"
+      role="button"
+      tabindex="0"
+      [attr.id]="'accordion-header-' + index"
+      [attr.aria-expanded]="accordionItem.expanded"
+      [attr.aria-controls]="'accordion-body-' + index"
+      
+    > 
+      <div
+        class="example-accordion-item-header"
+        (click)="accordionItem.toggle()"
+        
+      >
+        {{ item.header }}
+        <span class="example-accordion-item-description">
+          <img   style="width: 25px;" src="{{accordionItem.expanded ? '../../../../assets/noVis.png' :'../../../../assets/vis.png'}}" alt=""> 
+        </span>
+      </div>
+      <div
+        class="example-accordion-item-body"
+        role="region"
+        [style.display]="accordionItem.expanded ? '' : 'none'"
+        [attr.id]="'accordion-body-' + index"
+        [attr.aria-labelledby]="'accordion-header-' + index"
+      >
+        
+        <ul class="textoaccordion">
+        <li>
+          <a [href]="item.url1"> 
+            {{item.titulo}} 
+          </a>
+          <p class="especial">
+            {{item.texto}}
+          </p>
+          <ul class="listadentrotextoacordion" >
+            <li>
+              <a [href]="item.url3"> 
+                 {{item.anexo}} 
+              </a>
+              <p>
+                 {{item.anexotext}} 
+              </p>
+            </li>
+            <li>
+              <a [href]="item.url4">
+                {{item.anexo2}}
+              </a>
+              <p>
+                {{item.anexotext2}}
+              </p>
+            </li>
+            <li>
+              <a [href]="item.url5" style="margin: 0px 0px 20px 0px;">
+                {{item.anexo3}}
+              </a>
+              <p>
+                {{item.anexotext3}}
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a [href]="item.url2">
+            {{item.titulo2}}
+          </a>
+          <p>
+            {{item.texto2}}
+            <a [href]="item.url6" style="display: block;">
+              {{item.link}}
+            </a>
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url3">
+            {{item.titulo3}}
+          </a>
+          <p>
+            {{item.texto3}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url4">
+            {{item.titulo4}}
+          </a>
+          <p>
+            {{item.texto4}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url5">
+            {{item.titulo5}}
+          </a>
+          <p>
+            {{item.texto5}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url6">
+            {{item.titulo6}}
+          </a>
+          <p>
+            {{item.texto6}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url7">
+            {{item.titulo7}}
+          </a>
+          <p>
+            {{item.texto7}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url8">
+            {{item.titulo8}}
+          </a>
+          <p>
+            {{item.texto8}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url9">
+            {{item.titulo9}}
+          </a>
+          <p>
+            {{item.texto9}}
+          </p>
+        </li>
+      </ul>
+      </div>
+    </cdk-accordion-item>
+  </cdk-accordion>
+</div>
