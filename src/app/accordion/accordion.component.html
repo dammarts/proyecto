@@ -13,14 +13,16 @@
       [attr.id]="'accordion-header-' + index"
       [attr.aria-expanded]="accordionItem.expanded"
       [attr.aria-controls]="'accordion-body-' + index"
-    >
+      
+    > 
       <div
         class="example-accordion-item-header"
         (click)="accordionItem.toggle()"
+        
       >
         {{ item.header }}
         <span class="example-accordion-item-description">
-          <img style="width: 25px; opacity: 0;" src="{{accordionItem.expanded ? '../../../../assets/noVis.png' :'../../../../assets/vis.png'}}" alt=""> 
+          <img   style="width: 25px;" src="{{accordionItem.expanded ? '../../../../assets/noVis.png' :'../../../../assets/vis.png'}}" alt=""> 
         </span>
       </div>
       <div
@@ -30,6 +32,7 @@
         [attr.id]="'accordion-body-' + index"
         [attr.aria-labelledby]="'accordion-header-' + index"
       >
+        
         <ul class="textoaccordion">
         <li>
           <a [href]="item.url1"> 
