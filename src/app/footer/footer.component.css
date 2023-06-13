@@ -4,6 +4,8 @@
     padding: 6px 10px;
     text-align: center;
     background-color: #eaeaeb;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+
 }
 
 .contenedorCorreo {
@@ -21,5 +23,12 @@
 
 .contenedorCorreo a:hover {
     text-decoration: underline;
+}
+
+.contenedorCorreo p {
+    font-size: 1em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
 }
     

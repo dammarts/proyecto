@@ -77,7 +77,7 @@ body {
     
 }
 
-/* @media (max-width:) {
+/* @media (max-width:) 
     
 } */
 
@@ -95,6 +95,13 @@ body {
         white-space: nowrap;
         text-overflow: ellipsis;
          
+    }
+
+    @media (max-width:903.20px){
+        .menu li {
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
     }
 
     
