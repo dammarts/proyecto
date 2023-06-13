@@ -1,0 +1,25 @@
+#footer {
+   
+    clear: both;
+    padding: 6px 10px;
+    text-align: center;
+    background-color: #eaeaeb;
+}
+
+.contenedorCorreo {
+    background: #00AA6D;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+
+.contenedorCorreo a {
+    color: #eee;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.contenedorCorreo a:hover {
+    text-decoration: underline;
+}
+    

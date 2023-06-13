@@ -37,16 +37,18 @@ body {
     display:  flex;
     border-right-width: thin;
     border-right-style: ridge;
-    border-right-color: white; 
+    border-right-color: rgb(248, 243, 243,0.4);
     height: 45px;
     padding: 11px 27.6px;
     margin: 10px 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
 .menu li:last-child {
     border-right: 0;
-    /* padding: 11px 27,8px; */
+    
     
     
 }
@@ -71,10 +73,13 @@ body {
     text-decoration: none;
     font-size: 15px;
     overflow: visible; 
-
+    
+    
 }
 
-
+/* @media (max-width:) {
+    
+} */
 
 
 
@@ -92,26 +97,18 @@ body {
          
     }
 
-    @media (max-width:900.20px){
-
-        .menu li{
-            overflow: hidden; 
-            text-overflow: ellipsis;
-            
-        }
-
-    }
+    
     
     @media (max-width:826.4px){
         img{
-            display: block;
+            display: flex;
             width: 809px;
             height: 150px;
         }
 
         .menu{
             display: block;
-            width: 809px;
+            width: 807px;
             white-space: nowrap;
             
         }

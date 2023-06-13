@@ -18,9 +18,9 @@
         class="example-accordion-item-header"
         (click)="accordionItem.toggle()"
       >
-        {{ item }}
+        {{ item.header }}
         <span class="example-accordion-item-description">
-          Click to {{ accordionItem.expanded ? "close" : "open" }}
+          <img src="https://appvicedoce.udea.edu.co/img/viewIcon.png"  alt=""> {{ accordionItem.expanded ? "" : "" }}
         </span>
       </div>
       <div
@@ -30,10 +30,109 @@
         [attr.id]="'accordion-body-' + index"
         [attr.aria-labelledby]="'accordion-header-' + index"
       >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-        excepturi incidunt ipsum deleniti labore, tempore non nam doloribus
-        blanditiis veritatis illo autem iure aliquid ullam rem tenetur deserunt
-        velit culpa?
+        <ul class="textoaccordion">
+        <li>
+          <a [href]="item.url1"> 
+            {{item.titulo}} 
+          </a>
+          <p class="especial">
+            {{item.texto}}
+          </p>
+          <ul class="listadentrotextoacordion" >
+            <li>
+              <a [href]="item.url3"> 
+                 {{item.anexo}} 
+              </a>
+              <p>
+                 {{item.anexotext}} 
+              </p>
+            </li>
+            <li>
+              <a [href]="item.url4">
+                {{item.anexo2}}
+              </a>
+              <p>
+                {{item.anexotext2}}
+              </p>
+            </li>
+            <li>
+              <a [href]="item.url5" style="margin: 0px 0px 20px 0px;">
+                {{item.anexo3}}
+              </a>
+              <p>
+                {{item.anexotext3}}
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a [href]="item.url2">
+            {{item.titulo2}}
+          </a>
+          <p>
+            {{item.texto2}}
+            <a [href]="item.url6" style="display: block;">
+              {{item.link}}
+            </a>
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url3">
+            {{item.titulo3}}
+          </a>
+          <p>
+            {{item.texto3}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url4">
+            {{item.titulo4}}
+          </a>
+          <p>
+            {{item.texto4}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url5">
+            {{item.titulo5}}
+          </a>
+          <p>
+            {{item.texto5}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url6">
+            {{item.titulo6}}
+          </a>
+          <p>
+            {{item.texto6}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url7">
+            {{item.titulo7}}
+          </a>
+          <p>
+            {{item.texto7}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url8">
+            {{item.titulo8}}
+          </a>
+          <p>
+            {{item.texto8}}
+          </p>
+        </li>
+        <li>
+          <a [href]="item.url9">
+            {{item.titulo9}}
+          </a>
+          <p>
+            {{item.texto9}}
+          </p>
+        </li>
+      </ul>
       </div>
     </cdk-accordion-item>
   </cdk-accordion>
